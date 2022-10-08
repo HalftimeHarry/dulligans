@@ -2,9 +2,9 @@
   "name": "sveltekit-typescript-postcss-tailwind3",
   "version": "0.1.0",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write ./src/**/*.{svelte,ts,js} ./*.{ts,js}",
@@ -35,6 +35,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.9",
     "xrpl": "^2.5.0-beta.1"
   }
 }

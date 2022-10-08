@@ -1,16 +1,11 @@
-import preprocess from 'svelte-preprocess'
-import ssr from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-auto'
 
 /** @type {import('@sveltejs/kit').Config} */
-export default {
-  preprocess: [
-    preprocess({
-      postcss: true
-    })
-  ],
-
+const config = {
   kit: {
-    adapter: ssr(),
+    adapter: adapter(),
     target: '#svelte'
   }
 }
+
+export default config
