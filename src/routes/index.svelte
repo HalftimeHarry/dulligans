@@ -4,6 +4,26 @@
   import Timer from '$lib/Timer.svelte'
   import {isOverlayOpenType} from"./store"
   import Overlay from "$lib/Overlay.svelte"
+  import { Client } from "xrpl";
+
+  // In browsers, use a <script> tag. In Node.js, uncomment the following line:
+  // const xrpl = require('xrpl') NOTE The { Client } has replaced this comment
+
+  // Wrap code in an async function so we can use await
+  async function main() {
+
+    // Define the network client
+    const client = new Client("wss://s.altnet.rippletest.net:51233")
+      await client.connect()
+      console.log('conected index');
+
+    // ... custom code goes here
+
+    // Disconnect when done (If you omit this, Node.js won't end the process)
+    client.disconnect()
+  }
+
+  main()
 
 
 </script>
