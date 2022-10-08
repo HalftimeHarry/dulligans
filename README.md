@@ -38,6 +38,15 @@ Looks like this will be the last beta version, hope the stable version will be r
 
 ## Demo
 
+
+
+This presentation is key
+See https://www.youtube.com/watch?v=-aglc7P6WhU&t=682s
+
+
+
+
+
 ![Sveltekit with Tailwind](static/screenshot.png)
 
 Go to [**Live Demo**](https://sveltekit-tailwind2.netlify.app/)
